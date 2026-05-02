@@ -1,0 +1,27 @@
+========================================================================
+[config]
+n:                     10
+oracle_nonpcg:          results/vert_10/non_pcg_10.jsonl
+targets:                results/vert_10/non_pcg_10.jsonl
+labelg:                 nauty-labelg
+jobs:                   120
+max_add_size:           5
+timeout_per_graph:      60.0
+candidate_batch_size:   1000
+oracle_batch_size:      100000
+trust_oracle_canonical: False
+========================================================================
+[info] loading non-PCG oracle from results/vert_10/non_pcg_10.jsonl
+[info] oracle raw records loaded: 953,801
+[info] canonicalized oracle 100,000/953,801; unique=100,000
+[info] canonicalized oracle 200,000/953,801; unique=200,000
+[info] canonicalized oracle 300,000/953,801; unique=300,000
+[info] canonicalized oracle 400,000/953,801; unique=400,000
+[info] canonicalized oracle 500,000/953,801; unique=500,000
+[info] canonicalized oracle 600,000/953,801; unique=600,000
+[info] canonicalized oracle 700,000/953,801; unique=700,000
+[info] canonicalized oracle 800,000/953,801; unique=800,000
+[info] canonicalized oracle 900,000/953,801; unique=900,000
+[info] canonicalized oracle 953,801/953,801; unique=953,801
+[info] canonical non-PCG oracle size: 953,801
+[info] starting target processing...

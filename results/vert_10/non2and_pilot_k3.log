@@ -1,0 +1,71 @@
+========================================================================
+[config]
+n:                     10
+oracle_nonpcg:          results/vert_10/non_pcg_10.jsonl
+targets:                results/vert_10/non_pcg_10.jsonl
+labelg:                 nauty-labelg
+jobs:                   128
+max_add_size:           1
+timeout_per_graph:      20.0
+candidate_batch_size:   1000
+oracle_batch_size:      100000
+trust_oracle_canonical: False
+========================================================================
+[info] loading non-PCG oracle from results/vert_10/non_pcg_10.jsonl
+[info] oracle raw records loaded: 953,801
+[info] canonicalized oracle 100,000/953,801; unique=100,000
+[info] canonicalized oracle 200,000/953,801; unique=200,000
+[info] canonicalized oracle 300,000/953,801; unique=300,000
+[info] canonicalized oracle 400,000/953,801; unique=400,000
+[info] canonicalized oracle 500,000/953,801; unique=500,000
+[info] canonicalized oracle 600,000/953,801; unique=600,000
+[info] canonicalized oracle 700,000/953,801; unique=700,000
+[info] canonicalized oracle 800,000/953,801; unique=800,000
+[info] canonicalized oracle 900,000/953,801; unique=900,000
+[info] canonicalized oracle 953,801/953,801; unique=953,801
+[info] canonical non-PCG oracle size: 953,801
+[info] starting target processing...
+[progress] processed=4,531, 2AND=4,530, proven-non2AND=0, unresolved=1, elapsed=00:00:18, rate=257.39/s
+[progress] processed=9,062, 2AND=9,055, proven-non2AND=0, unresolved=7, elapsed=00:00:19, rate=487.24/s
+[progress] processed=13,593, 2AND=13,585, proven-non2AND=0, unresolved=8, elapsed=00:00:20, rate=683.32/s
+[progress] processed=18,124, 2AND=18,110, proven-non2AND=0, unresolved=14, elapsed=00:00:21, rate=852.81/s
+[progress] processed=22,655, 2AND=22,637, proven-non2AND=0, unresolved=18, elapsed=00:00:22, rate=1032.22/s
+[progress] processed=27,186, 2AND=27,162, proven-non2AND=0, unresolved=24, elapsed=00:00:23, rate=1180.05/s
+[progress] processed=31,717, 2AND=31,677, proven-non2AND=0, unresolved=40, elapsed=00:00:24, rate=1312.74/s
+[progress] processed=36,248, 2AND=36,190, proven-non2AND=0, unresolved=58, elapsed=00:00:25, rate=1431.91/s
+[progress] processed=40,779, 2AND=40,670, proven-non2AND=0, unresolved=109, elapsed=00:00:26, rate=1542.72/s
+[progress] processed=45,310, 2AND=45,192, proven-non2AND=0, unresolved=118, elapsed=00:00:28, rate=1644.22/s
+[progress] processed=49,841, 2AND=49,707, proven-non2AND=0, unresolved=134, elapsed=00:00:29, rate=1736.57/s
+[progress] processed=54,372, 2AND=54,232, proven-non2AND=0, unresolved=140, elapsed=00:00:30, rate=1821.23/s
+[progress] processed=58,903, 2AND=58,753, proven-non2AND=0, unresolved=150, elapsed=00:00:31, rate=1900.85/s
+[progress] processed=63,434, 2AND=63,271, proven-non2AND=0, unresolved=163, elapsed=00:00:32, rate=1975.01/s
+[progress] processed=67,965, 2AND=67,792, proven-non2AND=0, unresolved=173, elapsed=00:00:33, rate=2044.68/s
+[progress] processed=72,496, 2AND=72,288, proven-non2AND=0, unresolved=208, elapsed=00:00:34, rate=2107.80/s
+[progress] processed=77,027, 2AND=76,808, proven-non2AND=0, unresolved=219, elapsed=00:00:36, rate=2164.09/s
+[progress] processed=81,558, 2AND=81,330, proven-non2AND=0, unresolved=228, elapsed=00:00:37, rate=2218.54/s
+[progress] processed=86,089, 2AND=85,853, proven-non2AND=0, unresolved=236, elapsed=00:00:38, rate=2269.79/s
+[progress] processed=90,620, 2AND=90,356, proven-non2AND=0, unresolved=264, elapsed=00:00:39, rate=2302.77/s
+[progress] processed=95,151, 2AND=94,882, proven-non2AND=0, unresolved=269, elapsed=00:00:41, rate=2333.08/s
+[progress] processed=99,682, 2AND=99,401, proven-non2AND=0, unresolved=281, elapsed=00:00:42, rate=2362.03/s
+[progress] processed=104,213, 2AND=103,919, proven-non2AND=0, unresolved=294, elapsed=00:00:44, rate=2390.56/s
+[progress] processed=108,744, 2AND=108,435, proven-non2AND=0, unresolved=309, elapsed=00:00:45, rate=2424.20/s
+[progress] processed=113,275, 2AND=112,946, proven-non2AND=0, unresolved=329, elapsed=00:00:46, rate=2461.56/s
+[progress] processed=117,806, 2AND=117,467, proven-non2AND=0, unresolved=339, elapsed=00:00:47, rate=2493.99/s
+[progress] processed=122,337, 2AND=121,963, proven-non2AND=0, unresolved=374, elapsed=00:00:48, rate=2522.61/s
+[progress] processed=126,868, 2AND=126,443, proven-non2AND=0, unresolved=425, elapsed=00:00:50, rate=2551.10/s
+[progress] processed=131,399, 2AND=130,893, proven-non2AND=0, unresolved=506, elapsed=00:00:51, rate=2579.28/s
+[progress] processed=135,930, 2AND=135,403, proven-non2AND=0, unresolved=527, elapsed=00:00:52, rate=2609.37/s
+[progress] processed=140,461, 2AND=139,904, proven-non2AND=0, unresolved=557, elapsed=00:00:53, rate=2633.77/s
+[progress] processed=144,992, 2AND=144,402, proven-non2AND=0, unresolved=590, elapsed=00:00:54, rate=2661.37/s
+[progress] processed=149,523, 2AND=148,909, proven-non2AND=0, unresolved=614, elapsed=00:00:56, rate=2684.84/s
+[progress] processed=154,054, 2AND=153,421, proven-non2AND=0, unresolved=633, elapsed=00:00:57, rate=2705.13/s
+[progress] processed=158,585, 2AND=157,923, proven-non2AND=0, unresolved=662, elapsed=00:00:58, rate=2724.71/s
+[progress] processed=163,116, 2AND=162,438, proven-non2AND=0, unresolved=678, elapsed=00:00:59, rate=2744.44/s
+[progress] processed=167,647, 2AND=166,910, proven-non2AND=0, unresolved=737, elapsed=00:01:01, rate=2765.71/s
+[progress] processed=172,178, 2AND=171,407, proven-non2AND=0, unresolved=771, elapsed=00:01:02, rate=2785.10/s
+[progress] processed=176,709, 2AND=175,910, proven-non2AND=0, unresolved=799, elapsed=00:01:03, rate=2802.53/s
+[progress] processed=181,240, 2AND=180,408, proven-non2AND=0, unresolved=832, elapsed=00:01:04, rate=2818.82/s
+[progress] processed=185,771, 2AND=184,920, proven-non2AND=0, unresolved=851, elapsed=00:01:06, rate=2832.34/s
+[progress] processed=190,302, 2AND=189,386, proven-non2AND=0, unresolved=916, elapsed=00:01:07, rate=2847.16/s
+[progress] processed=194,833, 2AND=193,773, proven-non2AND=0, unresolved=1,060, elapsed=00:01:08, rate=2862.16/s
+[progress] processed=199,364, 2AND=198,093, proven-non2AND=0, unresolved=1,271, elapsed=00:01:09, rate=2876.07/s

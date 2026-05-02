@@ -1,0 +1,16 @@
+n: 9
+output_dir: results/vert_9
+pcg_star_file: results/vert_9/pcg_star_9.jsonl
+pcg_cat_file: results/vert_9/pcg_cat_9.jsonl
+pcg_gen_file: results/vert_9/pcg_gen_9.jsonl
+non_pcg_file: results/vert_9/non_pcg_9.jsonl
+summary_file: results/vert_9/summary.txt
+total: 261080
+sat-star: 2895
+sat-caterpillar: 250260
+sat-general: 5965
+unsat: 1960
+elapsed_seconds: 1955.458217
+elapsed_hms: 00:32:35
+max_workers: 160
+queue_limit: 320

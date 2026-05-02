@@ -1,0 +1,16 @@
+n: 7
+output_dir: results/vert_7
+pcg_star_file: results/vert_7/pcg_star_7.jsonl
+pcg_cat_file: results/vert_7/pcg_cat_7.jsonl
+pcg_gen_file: results/vert_7/pcg_gen_7.jsonl
+non_pcg_file: results/vert_7/non_pcg_7.jsonl
+summary_file: results/vert_7/summary.txt
+total: 853
+sat-star: 208
+sat-caterpillar: 644
+sat-general: 1
+unsat: 0
+elapsed_seconds: 3.666068
+elapsed_hms: 00:00:04
+max_workers: 160
+queue_limit: 320
