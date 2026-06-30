@@ -235,5 +235,26 @@ n = 10: 170 hours 21 minutes on CloudLab
 
 ## Notes on private comparison data
 
-The manuscript discusses a recheck of a previously reported nine-vertex minimal non-PCG count. The underlying comparison list was obtained through private correspondence and is not redistributed in this repository. The public artifact therefore contains only the shareable code, scripts, summaries, and enumeration outputs.
+The manuscript discusses a recheck of a previously reported nine-vertex minimal non-PCG count. We included the 12 graphs and their PCG witnesses explicitly. 
+
+---
+
+## Citation
+
+If you use this implementation, enumeration data, or any part of this artifact,
+please cite the following paper:
+
+```bibtex
+@inproceedings{HakimSultanaBayzid2026SMTTreeMetrics,
+  author    = {Sheikh Azizul Hakim and Sumaiya Sultana and Md. Shamsuzzoha Bayzid},
+  title     = {{SMT} over Tree Metrics: Enumerating Pairwise Compatibility Graphs},
+  booktitle = {Proceedings of the 11th International Workshop on Satisfiability Checking and Symbolic Computation ({SC-Square} 2026)},
+  series    = {CEUR Workshop Proceedings},
+  publisher = {CEUR-WS.org},
+  year      = {2026},
+  note      = {To appear}
+}
+```
+
+For any queries, please contact me at ```1705002@ugrad.cse.buet.ac.bd```. 
 
