@@ -1,0 +1,622 @@
+----------------------------------------------------------------------------------------------------------------------
+The following 12 graphs are identified as non-PCG by Azam et al, but in our analysis we proved them to be PCG's. 
+----------------------------------------------------------------------------------------------------------------------
+
+HKHo}Vz
+H@U`m^z
+HAe`j^^
+H[CZ]zf
+HEHq|^j
+H@Zlq~V
+HBjJ|zr
+HBqmXlx
+H@fBJu}
+H[XOx}}
+H@hqmVz
+HAW{nVv
+
+----------------------------------------------------------------------------------------------------------------------
+The PCG witnesses are shown below.
+----------------------------------------------------------------------------------------------------------------------
+
+-----------
+1
+-----------
+HKHo}Vz
+Input graph
+-----------
+graph6 : HKHo}Vz
+n      : 9
+m      : 20
+edges  : [(0, 3), (0, 7), (0, 8), (1, 2), (1, 5), (1, 7), (1, 8), (2, 4), (2, 5), (2, 8), (3, 5), (3, 6), (3, 8), (4, 6), (4, 7), (4, 8), (5, 6), (6, 7), (6, 8), (7, 8)]
+Solving for n=9, m=20, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (6, 10)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   13   11    8    5    5    5    9    7
+   1   13    0    9   15   12    8   14    6   10
+   2   11    9    0   13   10    6   12    5    8
+   3    8   15   13    0    5    7    9   11    9
+   4    5   12   10    5    0    4    6    8    6
+   5    5    8    6    7    4    0    6    4    2
+   6    5   14   12    9    6    6    0   10    8
+   7    9    6    5   11    8    4   10    0    6
+   8    7   10    8    9    6    2    8    6    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+((((4:1.00000,3:4.00000)Inner3:1.00000,(6:3.00000,0:2.00000)Inner4:1.00000)Inner5:2.00000,(2:3.50000,(7:1.00000,1:5.00000)Inner1:0.50000)Inner2:2.50000)Inner6:0.00000,5:0.00000,8:2.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.0
+  Inner7 -- 5   weight=0.0
+  Inner7 -- 8   weight=2.0
+  Inner6 -- Inner5   weight=2.0
+  Inner6 -- Inner2   weight=2.5
+  Inner5 -- Inner3   weight=1.0
+  Inner5 -- Inner4   weight=1.0
+  Inner3 -- 4   weight=1.0
+  Inner3 -- 3   weight=4.0
+  Inner4 -- 6   weight=3.0
+  Inner4 -- 0   weight=2.0
+  Inner2 -- 2   weight=3.4999999999999996
+  Inner2 -- Inner1   weight=0.5000000000000004
+  Inner1 -- 7   weight=1.0
+  Inner1 -- 1   weight=5.0
+
+
+-----------
+2
+-----------
+H@U`m^z
+Input graph
+-----------
+graph6 : H@U`m^z
+n      : 9
+m      : 20
+edges  : [(0, 5), (0, 7), (0, 8), (1, 4), (1, 7), (1, 8), (2, 3), (2, 5), (2, 6), (2, 8), (3, 4), (3, 6), (3, 8), (4, 7), (4, 8), (5, 6), (5, 7), (6, 7), (6, 8), (7, 8)]
+Solving for n=9, m=20, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (5, 10)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   15   11   13   14    8   12   10    6
+   1   15    0    4   11    8   13   12    8   10
+   2   11    4    0    7    4    9    8    4    6
+   3   13   11    7    0   10   11   10    4    8
+   4   14    8    4   10    0   12   11    7    9
+   5    8   13    9   11   12    0   10    8    4
+   6   12   12    8   10   11   10    0    7    7
+   7   10    8    4    4    7    8    7    0    5
+   8    6   10    6    8    9    4    7    5    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+(((6:4.50000,(8:0.50000,(5:3.00000,0:5.00000)Inner1:0.50000)Inner2:2.00000)Inner5:1.00000,(4:3.50000,(2:0.00000,1:4.00000)Inner3:0.50000)Inner4:2.00000)Inner6:1.00000,3:3.50000,7:0.50000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=1.0
+  Inner7 -- 3   weight=3.5
+  Inner7 -- 7   weight=0.5
+  Inner6 -- Inner5   weight=1.0
+  Inner6 -- Inner4   weight=2.0
+  Inner5 -- 6   weight=4.500000000000002
+  Inner5 -- Inner2   weight=1.9999999999999982
+  Inner2 -- 8   weight=0.5000000000000004
+  Inner2 -- Inner1   weight=0.49999999999999956
+  Inner1 -- 5   weight=3.000000000000001
+  Inner1 -- 0   weight=4.999999999999999
+  Inner4 -- 4   weight=3.5
+  Inner4 -- Inner3   weight=0.5
+  Inner3 -- 2   weight=0.0
+  Inner3 -- 1   weight=4.0
+
+
+-----------
+3
+-----------
+HAe`j^^
+Input graph
+-----------
+graph6 : HAe`j^^
+n      : 9
+m      : 20
+edges  : [(0, 4), (0, 5), (0, 8), (1, 3), (1, 7), (1, 8), (2, 5), (2, 6), (2, 7), (3, 4), (3, 6), (3, 8), (4, 7), (4, 8), (5, 6), (5, 7), (5, 8), (6, 7), (6, 8), (7, 8)]
+Solving for n=9, m=20, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (6, 11)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   12   16   15   11   11   14   15   11
+   1   12    0    5    9    1    5    3    7    8
+   2   16    5    0   13    5    9    6   11   12
+   3   15    9   13    0    8    5   11   12   11
+   4   11    1    5    8    0    4    3    6    7
+   5   11    5    9    5    4    0    7    8    7
+   6   14    3    6   11    3    7    0    9   10
+   7   15    7   11   12    6    8    9    0   11
+   8   11    8   12   11    7    7   10   11    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+(((4:0.00000,(7:5.00000,((5:0.50000,3:4.50000)Inner1:1.50000,(8:3.50000,0:7.50000)Inner2:1.50000)Inner3:1.00000)Inner4:1.00000)Inner5:0.50000,1:0.50000)Inner6:0.50000,2:4.00000,6:2.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.5
+  Inner7 -- 2   weight=4.0
+  Inner7 -- 6   weight=2.0
+  Inner6 -- Inner5   weight=0.5
+  Inner6 -- 1   weight=0.5
+  Inner5 -- 4   weight=4.440892098500626e-16
+  Inner5 -- Inner4   weight=0.9999999999999996
+  Inner4 -- 7   weight=5.0
+  Inner4 -- Inner3   weight=1.0
+  Inner3 -- Inner1   weight=1.4999999999999996
+  Inner3 -- Inner2   weight=1.5000000000000004
+  Inner1 -- 5   weight=0.5
+  Inner1 -- 3   weight=4.5
+  Inner2 -- 8   weight=3.499999999999999
+  Inner2 -- 0   weight=7.500000000000001
+
+
+-----------
+4
+-----------
+H[CZ]zf
+Input graph
+-----------
+graph6 : H[CZ]zf
+n      : 9
+m      : 21
+edges  : [(0, 2), (0, 3), (0, 7), (0, 8), (1, 2), (1, 6), (1, 7), (1, 8), (2, 6), (2, 8), (3, 4), (3, 5), (3, 7), (4, 5), (4, 6), (4, 7), (5, 6), (5, 7), (5, 8), (6, 8), (7, 8)]
+Solving for n=9, m=21, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (6, 12)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   14   12   10    5    3    5    8   11
+   1   14    0   11   16   16   15   11    6   12
+   2   12   11    0   14   14   13    9    5   10
+   3   10   16   14    0   12   11    5   10   13
+   4    5   16   14   12    0    6    7   10   13
+   5    3   15   13   11    6    0    6    9   12
+   6    5   11    9    5    7    6    0    5    8
+   7    8    6    5   10   10    9    5    0    6
+   8   11   12   10   13   13   12    8    6    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+((2:4.50000,(8:4.50000,((6:0.00000,3:5.00000)Inner3:1.00000,(4:3.50000,(5:2.00000,0:1.00000)Inner1:0.50000)Inner2:2.50000)Inner4:2.50000)Inner5:1.00000)Inner6:0.50000,1:6.00000,7:0.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.5
+  Inner7 -- 1   weight=6.0
+  Inner7 -- 7   weight=0.0
+  Inner6 -- 2   weight=4.5
+  Inner6 -- Inner5   weight=1.0
+  Inner5 -- 8   weight=4.499999999999999
+  Inner5 -- Inner4   weight=2.500000000000001
+  Inner4 -- Inner3   weight=1.0
+  Inner4 -- Inner2   weight=2.5
+  Inner3 -- 6   weight=0.0
+  Inner3 -- 3   weight=5.0
+  Inner2 -- 4   weight=3.499999999999999
+  Inner2 -- Inner1   weight=0.5000000000000009
+  Inner1 -- 5   weight=2.0
+  Inner1 -- 0   weight=1.0
+
+
+-----------
+5
+-----------
+HEHq|^j
+Input graph
+-----------
+graph6 : HEHq|^j
+n      : 9
+m      : 21
+edges  : [(0, 3), (0, 7), (0, 8), (1, 3), (1, 5), (1, 6), (1, 8), (2, 4), (2, 5), (2, 7), (2, 8), (3, 5), (3, 6), (4, 6), (4, 7), (4, 8), (5, 6), (5, 7), (6, 7), (6, 8), (7, 8)]
+Solving for n=9, m=21, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (9, 17)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   22   18   11   19   21   20   17   17
+   1   22    0    8   11   19   17    9   18   13
+   2   18    8    0    7   15   13    6   14    9
+   3   11   11    7    0    8   10    9    7    6
+   4   19   19   15    8    0   18   17   15   14
+   5   21   17   13   10   18    0   15   17    8
+   6   20    9    6    9   17   15    0   16   11
+   7   17   18   14    7   15   17   16    0   13
+   8   17   13    9    6   14    8   11   13    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+(((7:6.50000,0:10.50000)Inner5:0.50000,((8:2.00000,5:6.00000)Inner3:2.00000,(2:2.00000,(6:3.50000,1:5.50000)Inner1:0.50000)Inner2:3.00000)Inner4:2.00000)Inner6:0.00000,3:0.00000,4:8.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.0
+  Inner7 -- 3   weight=0.0
+  Inner7 -- 4   weight=8.0
+  Inner6 -- Inner5   weight=0.5
+  Inner6 -- Inner4   weight=2.0
+  Inner5 -- 7   weight=6.5
+  Inner5 -- 0   weight=10.5
+  Inner4 -- Inner3   weight=2.0
+  Inner4 -- Inner2   weight=3.0
+  Inner3 -- 8   weight=2.0
+  Inner3 -- 5   weight=6.0
+  Inner2 -- 2   weight=2.0
+  Inner2 -- Inner1   weight=0.5
+  Inner1 -- 6   weight=3.5
+  Inner1 -- 1   weight=5.5
+
+
+-----------
+6
+-----------
+H@Zlq~V
+Input graph
+-----------
+graph6 : H@Zlq~V
+n      : 9
+m      : 22
+edges  : [(0, 5), (0, 6), (0, 8), (1, 4), (1, 5), (1, 7), (1, 8), (2, 3), (2, 4), (2, 5), (2, 6), (3, 6), (3, 7), (3, 8), (4, 5), (4, 6), (4, 7), (5, 7), (5, 8), (6, 7), (6, 8), (7, 8)]
+Solving for n=9, m=22, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (5, 10)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   14   11    4   13    6    8   12   10
+   1   14    0    4   12   10    9   11    6    7
+   2   11    4    0    9    7    6    8    3    4
+   3    4   12    9    0   11    4    6   10    8
+   4   13   10    7   11    0    8   10    8    4
+   5    6    9    6    4    8    0    2    7    5
+   6    8   11    8    6   10    2    0    9    7
+   7   12    6    3   10    8    7    9    0    5
+   8   10    7    4    8    4    5    7    5    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+(((8:0.50000,4:3.50000)Inner4:1.00000,((6:2.00000,5:0.00000)Inner2:0.50000,(3:1.00000,0:3.00000)Inner1:2.50000)Inner3:3.00000)Inner5:1.50000,(2:0.50000,1:3.50000)Inner6:0.50000,7:2.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner5   weight=1.5
+  Inner7 -- Inner6   weight=0.5
+  Inner7 -- 7   weight=2.0
+  Inner5 -- Inner4   weight=1.0000000000000009
+  Inner5 -- Inner3   weight=2.999999999999999
+  Inner4 -- 8   weight=0.5
+  Inner4 -- 4   weight=3.5
+  Inner3 -- Inner2   weight=0.5
+  Inner3 -- Inner1   weight=2.5
+  Inner2 -- 6   weight=1.9999999999999996
+  Inner2 -- 5   weight=4.440892098500626e-16
+  Inner1 -- 3   weight=1.0
+  Inner1 -- 0   weight=3.0
+  Inner6 -- 2   weight=0.5
+  Inner6 -- 1   weight=3.5
+
+
+-----------
+7
+-----------
+HBjJ|zr
+Input graph
+-----------
+graph6 : HBjJ|zr
+n      : 9
+m      : 23
+edges  : [(0, 4), (0, 5), (0, 7), (0, 8), (1, 3), (1, 5), (1, 6), (1, 8), (2, 3), (2, 4), (2, 6), (2, 7), (2, 8), (3, 6), (3, 7), (3, 8), (4, 5), (4, 6), (4, 7), (5, 6), (5, 7), (6, 8), (7, 8)]
+Solving for n=9, m=23, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (6, 12)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   15   13   14   12    9    5    6    9
+   1   15    0    5   10   14    6   12   13   11
+   2   13    5    0    8   12    4   10   11    9
+   3   14   10    8    0   13    5   11   12   10
+   4   12   14   12   13    0    8    9   10    5
+   5    9    6    4    5    8    0    6    7    5
+   6    5   12   10   11    9    6    0    2    6
+   7    6   13   11   12   10    7    2    0    7
+   8    9   11    9   10    5    5    6    7    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+((0:4.00000,((8:1.00000,4:4.00000)Inner4:1.50000,(5:0.00000,(3:4.50000,(2:1.50000,1:3.50000)Inner1:2.00000)Inner2:0.50000)Inner3:2.50000)Inner5:2.50000)Inner6:0.50000,6:0.50000,7:1.50000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.5
+  Inner7 -- 6   weight=0.5
+  Inner7 -- 7   weight=1.5
+  Inner6 -- 0   weight=4.0
+  Inner6 -- Inner5   weight=2.5
+  Inner5 -- Inner4   weight=1.5000000000000009
+  Inner5 -- Inner3   weight=2.499999999999999
+  Inner4 -- 8   weight=1.0
+  Inner4 -- 4   weight=4.0
+  Inner3 -- 5   weight=0.0
+  Inner3 -- Inner2   weight=0.5
+  Inner2 -- 3   weight=4.499999999999999
+  Inner2 -- Inner1   weight=2.000000000000001
+  Inner1 -- 2   weight=1.5
+  Inner1 -- 1   weight=3.5
+
+
+-----------
+8
+-----------
+HBqmXlx
+Input graph
+-----------
+graph6 : HBqmXlx
+n      : 9
+m      : 20
+edges  : [(0, 4), (0, 5), (0, 6), (1, 3), (1, 4), (1, 6), (1, 8), (2, 3), (2, 5), (2, 7), (2, 8), (3, 7), (3, 8), (4, 5), (4, 6), (4, 8), (5, 6), (5, 7), (6, 7), (7, 8)]
+Solving for n=9, m=20, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (7, 13)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   14   17   17   13   12   11   16    6
+   1   14    0    6   10   13    5   11    5    8
+   2   17    6    0   13   16    8   14    7   11
+   3   17   10   13    0   16    6   14   12   11
+   4   13   13   16   16    0   11    9   15    7
+   5   12    5    8    6   11    0    9    7    6
+   6   11   11   14   14    9    9    0   13    5
+   7   16    5    7   12   15    7   13    0   10
+   8    6    8   11   11    7    6    5   10    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+(((8:0.00000,0:6.00000)Inner5:1.00000,((5:0.50000,3:5.50000)Inner3:1.00000,((7:3.00000,2:4.00000)Inner1:0.50000,1:1.50000)Inner2:2.00000)Inner4:3.50000)Inner6:0.50000,4:5.50000,6:3.50000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.5
+  Inner7 -- 4   weight=5.5
+  Inner7 -- 6   weight=3.5
+  Inner6 -- Inner5   weight=1.0
+  Inner6 -- Inner4   weight=3.5
+  Inner5 -- 8   weight=0.0
+  Inner5 -- 0   weight=6.0
+  Inner4 -- Inner3   weight=1.0
+  Inner4 -- Inner2   weight=2.0
+  Inner3 -- 5   weight=0.5
+  Inner3 -- 3   weight=5.5
+  Inner2 -- Inner1   weight=0.5
+  Inner2 -- 1   weight=1.5
+  Inner1 -- 7   weight=3.0
+  Inner1 -- 2   weight=4.0
+
+
+-----------
+9
+-----------
+H@fBJu}
+Input graph
+-----------
+graph6 : H@fBJu}
+n      : 9
+m      : 19
+edges  : [(0, 4), (0, 5), (0, 8), (1, 5), (1, 6), (1, 7), (2, 3), (2, 6), (2, 7), (2, 8), (3, 4), (3, 7), (3, 8), (4, 7), (4, 8), (5, 6), (5, 8), (6, 7), (6, 8)]
+Solving for n=9, m=19, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (7, 13)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   17   14   16   12   10   16    6    7
+   1   17    0    6   15    6    9   10   12   14
+   2   14    6    0   12    3    6    7    9   11
+   3   16   15   12    0   10    6   14   11   13
+   4   12    6    3   10    0    4    4    7    9
+   5   10    9    6    6    4    0    8    5    7
+   6   16   10    7   14    4    8    0   11   13
+   7    6   12    9   11    7    5   11    0    3
+   8    7   14   11   13    9    7   13    3    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+((((5:0.00000,3:6.00000)Inner3:1.00000,(7:0.50000,(8:2.00000,0:5.00000)Inner1:0.50000)Inner2:3.50000)Inner4:2.50000,(2:1.50000,1:4.50000)Inner5:1.00000)Inner6:0.50000,4:0.00000,6:4.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.5
+  Inner7 -- 4   weight=0.0
+  Inner7 -- 6   weight=4.0
+  Inner6 -- Inner4   weight=2.5
+  Inner6 -- Inner5   weight=1.0
+  Inner4 -- Inner3   weight=1.0
+  Inner4 -- Inner2   weight=3.5
+  Inner3 -- 5   weight=0.0
+  Inner3 -- 3   weight=6.0
+  Inner2 -- 7   weight=0.5
+  Inner2 -- Inner1   weight=0.5
+  Inner1 -- 8   weight=2.0
+  Inner1 -- 0   weight=5.0
+  Inner5 -- 2   weight=1.5
+  Inner5 -- 1   weight=4.5
+
+
+-----------
+10
+-----------
+H[XOx}}
+Input graph
+-----------
+graph6 : H[XOx}}
+n      : 9
+m      : 21
+edges  : [(0, 2), (0, 3), (0, 8), (1, 2), (1, 4), (1, 5), (2, 4), (2, 7), (2, 8), (3, 5), (3, 6), (3, 7), (3, 8), (4, 6), (4, 7), (4, 8), (5, 6), (5, 7), (5, 8), (6, 7), (6, 8)]
+Solving for n=9, m=21, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (8, 14)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   15   12   11    7    7    7    7    8
+   1   15    0   14   18   14    8   18   16   17
+   2   12   14    0   15   11    6   15   13   14
+   3   11   18   15    0    7   10   14   12   13
+   4    7   14   11    7    0    6   10    8    9
+   5    7    8    6   10    6    0   10    8    9
+   6    7   18   15   14   10   10    0   10   11
+   7    7   16   13   12    8    8   10    0    7
+   8    8   17   14   13    9    9   11    7    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+(((6:5.00000,0:2.00000)Inner5:1.00000,((4:1.50000,3:5.50000)Inner3:1.50000,(2:5.50000,(5:0.00000,1:8.00000)Inner1:0.50000)Inner2:2.50000)Inner4:1.00000)Inner6:1.00000,7:3.00000,8:4.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=1.0
+  Inner7 -- 7   weight=3.0
+  Inner7 -- 8   weight=4.0
+  Inner6 -- Inner5   weight=1.0
+  Inner6 -- Inner4   weight=1.0
+  Inner5 -- 6   weight=4.999999999999999
+  Inner5 -- 0   weight=2.000000000000001
+  Inner4 -- Inner3   weight=1.5
+  Inner4 -- Inner2   weight=2.5
+  Inner3 -- 4   weight=1.5
+  Inner3 -- 3   weight=5.5
+  Inner2 -- 2   weight=5.500000000000001
+  Inner2 -- Inner1   weight=0.4999999999999991
+  Inner1 -- 5   weight=0.0
+  Inner1 -- 1   weight=8.0
+
+
+-----------
+11
+-----------
+H@hqmVz
+Input graph
+-----------
+graph6 : H@hqmVz
+n      : 9
+m      : 20
+edges  : [(0, 4), (0, 7), (0, 8), (1, 5), (1, 6), (1, 7), (1, 8), (2, 3), (2, 4), (2, 5), (2, 8), (3, 5), (3, 6), (3, 8), (4, 7), (4, 8), (5, 6), (6, 7), (6, 8), (7, 8)]
+Solving for n=9, m=20, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (5, 8)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   11    9   11    8    4   10    8    5
+   1   11    0    4    9   10    7    6    6    8
+   2    9    4    0    7    8    5    4    4    6
+   3   11    9    7    0   10    7    8    4    8
+   4    8   10    8   10    0    4    9    7    5
+   5    4    7    5    7    4    0    6    4    1
+   6   10    6    4    8    9    6    0    5    7
+   7    8    6    4    4    7    4    5    0    5
+   8    5    8    6    8    5    1    7    5    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+((0:4.00000,(4:3.50000,((7:0.50000,3:3.50000)Inner3:1.00000,(6:2.50000,(2:1.00000,1:3.00000)Inner1:0.50000)Inner2:1.00000)Inner4:2.00000)Inner5:0.50000)Inner6:0.00000,5:0.00000,8:1.00000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- Inner6   weight=0.0
+  Inner7 -- 5   weight=0.0
+  Inner7 -- 8   weight=1.0
+  Inner6 -- 0   weight=4.0
+  Inner6 -- Inner5   weight=0.5
+  Inner5 -- 4   weight=3.5
+  Inner5 -- Inner4   weight=2.0
+  Inner4 -- Inner3   weight=1.0
+  Inner4 -- Inner2   weight=1.0
+  Inner3 -- 7   weight=0.5
+  Inner3 -- 3   weight=3.5
+  Inner2 -- 6   weight=2.5
+  Inner2 -- Inner1   weight=0.5
+  Inner1 -- 2   weight=1.0000000000000009
+  Inner1 -- 1   weight=2.999999999999999
+
+
+-----------
+12
+-----------
+HAW{nVv
+Input graph
+-----------
+graph6 : HAW{nVv
+n      : 9
+m      : 21
+edges  : [(0, 6), (0, 7), (0, 8), (1, 3), (1, 4), (1, 7), (1, 8), (2, 4), (2, 5), (2, 7), (2, 8), (3, 5), (3, 6), (3, 8), (4, 5), (4, 7), (5, 6), (5, 8), (6, 7), (6, 8), (7, 8)]
+Solving for n=9, m=21, max_dist=100000 ...
+
+Result: SAT
+Interval [L, U] = (4, 9)
+
+Distance matrix:
+        0    1    2    3    4    5    6    7    8
+   0    0   13   14   12   16   10    9    9    6
+   1   13    0    3    9    4    3   10    6    8
+   2   14    3    0   10    6    4   11    7    9
+   3   12    9   10    0   12    6    9    3    7
+   4   16    4    6   12    0    6   13    9   11
+   5   10    3    4    6    6    0    7    3    5
+   6    9   10   11    9   13    7    0    6    4
+   7    9    6    7    3    9    3    6    0    4
+   8    6    8    9    7   11    5    4    4    0
+
+Interval check against graph: OK
+
+Recovered tree in Newick format:
+(0:5.50000,(6:3.00000,((7:0.00000,3:3.00000)Inner4:1.00000,(5:0.00000,(2:2.00000,(4:3.50000,1:0.50000)Inner1:0.50000)Inner2:2.00000)Inner3:2.00000)Inner5:2.00000)Inner6:0.50000,8:0.50000)Inner7:0.00000;
+
+Recovered NetworkX tree edges with weights:
+  Inner7 -- 0   weight=5.5
+  Inner7 -- Inner6   weight=0.5
+  Inner7 -- 8   weight=0.5
+  Inner6 -- 6   weight=3.0
+  Inner6 -- Inner5   weight=2.0
+  Inner5 -- Inner4   weight=0.9999999999999991
+  Inner5 -- Inner3   weight=2.000000000000001
+  Inner4 -- 7   weight=0.0
+  Inner4 -- 3   weight=3.0
+  Inner3 -- 5   weight=0.0
+  Inner3 -- Inner2   weight=2.0
+  Inner2 -- 2   weight=2.0
+  Inner2 -- Inner1   weight=0.5
+  Inner1 -- 4   weight=3.5
+  Inner1 -- 1   weight=0.5
+
+
+
